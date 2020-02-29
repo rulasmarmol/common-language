@@ -1,7 +1,7 @@
 ![Image of Git Branching](../assets/branching-illustration.png)
 [Programming](#Programming)
 ## 10 Git Commands That Every Hiring Manager Should Ask
-_10 Git Commands That Every Hiring Manager Should Ask_ 
+_It may be seem trivial, but every candidate should know this commands or at least have an idea_
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
