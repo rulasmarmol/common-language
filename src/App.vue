@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar/>
-    <most-recent-entries/>
+    <MostRecentEntries/>
   </div>
 </template>
 

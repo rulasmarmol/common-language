@@ -1,7 +1,7 @@
 <template>
     <b-container class="most-recent-entries">
         <b-row class="text-center">
-            <b-col sm="6">1 of 4 (wider)</b-col>
+            <b-col sm="6"><MostUsefulGitCommands/></b-col>
             <b-col sm="2" class="left-separator">2 of 4</b-col>
             <b-col sm="2" class="left-separator">3 of 4</b-col>
             <b-col sm="2" class="left-separator">4 of 4</b-col>
@@ -10,8 +10,20 @@
 </template>
 
 <script>
+import MostUsefulGitCommands from './MostUsefulGitCommands.md'
+
 export default {
-  name: 'MostRecentEntries',
+    name: 'MostRecentEntries',
+    components: {
+        MostUsefulGitCommands
+    },
+    mounted: function () {
+        this.$nextTick(function () {
+            // Code that will run only after the
+            // entire view has been rendered
+            document.getElementsByTagName('img')[0].className = 'img-fluid';
+        })
+    }   
 }
 </script>
 
