@@ -1,7 +1,10 @@
 <template>
     <b-container class="most-recent-entries">
         <b-row class="text-center">
-            <b-col sm="6"><MostUsefulGitCommands/></b-col>
+            <b-col sm="6">
+                <MostUsefulGitCommands/>  
+                <b-button variant="outline-light">Read More</b-button>
+            </b-col>
             <b-col sm="2" class="left-separator">2 of 4</b-col>
             <b-col sm="2" class="left-separator">3 of 4</b-col>
             <b-col sm="2" class="left-separator">4 of 4</b-col>
@@ -37,5 +40,4 @@ export default {
         padding: 30px;
     }
 }
-
 </style>
