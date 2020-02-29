@@ -2,8 +2,10 @@
     <b-container class="most-recent-entries">
         <b-row class="text-center">
             <b-col sm="6">
-                <MostUsefulGitCommands/>  
-                <b-button variant="outline-light">Read More</b-button>
+                <MostUsefulGitCommandsCard/>  
+                <router-link to="/most-useful-git-commands">
+                    <b-button  variant="outline-light">Read More</b-button>
+                </router-link>
             </b-col>
             <b-col sm="2" class="left-separator">2 of 4</b-col>
             <b-col sm="2" class="left-separator">3 of 4</b-col>
@@ -13,12 +15,12 @@
 </template>
 
 <script>
-import MostUsefulGitCommands from './MostUsefulGitCommands.md'
+import MostUsefulGitCommandsCard from './articles/MostUsefulGitCommandsCard.md'
 
 export default {
     name: 'MostRecentEntries',
     components: {
-        MostUsefulGitCommands
+        MostUsefulGitCommandsCard
     },
     mounted: function () {
         this.$nextTick(function () {

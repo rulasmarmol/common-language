@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <NavBar/>
-    <MostRecentEntries/>
+    <template v-if="$route.matched.length">
+      <router-view></router-view>
+    </template>
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-import MostRecentEntries from './components/MostRecentEntries.vue'
 
 import Vue from 'vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
@@ -22,8 +23,7 @@ Vue.use(IconsPlugin)
 export default {
   name: 'App',
   components: {
-    NavBar,
-    MostRecentEntries
+    NavBar
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div v-on:mouseenter="isHidden=true" v-on:mouseleave="isHidden=false">
     <b-navbar :sticky=true toggleable="lg" type="light" variant="light" >
-      <b-navbar-brand align="center" href="#">Common Language</b-navbar-brand>
+      <router-link to="/"><b-navbar-brand align="center">Common Language</b-navbar-brand></router-link>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
