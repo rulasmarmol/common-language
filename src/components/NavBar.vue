@@ -16,7 +16,7 @@
             <b-dropdown-item href="#">Fitness</b-dropdown-item>
             <b-dropdown-item href="#">Travel</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="#">About Me</b-nav-item>
+          <b-nav-item href="#">{{ $t('text.about_me') }}</b-nav-item>
         </b-navbar-nav>
         <!-- Right aligned nav items -->
         <transition name="fade">
@@ -26,10 +26,12 @@
               <b-button size="sm" class="my-2 my-sm-0" type="button"><b-icon-search></b-icon-search></b-button>
             </b-nav-form>
 
-            <b-nav-item-dropdown :text="language" right >
-              <b-dropdown-item href="#" @click="language = 'EN'">EN</b-dropdown-item>
-              <b-dropdown-item href="#" @click="language = 'ES'">ES</b-dropdown-item>
+            <b-nav-item-dropdown :text="$i18n.locale" right >
+              <b-dropdown-item href="#" @click="$i18n.locale = 'en'">en</b-dropdown-item>
+              <b-dropdown-item href="#" @click="$i18n.locale = 'es'">es</b-dropdown-item>
             </b-nav-item-dropdown>
+
+                
 
             <b-nav-item-dropdown right >
               <!-- Using 'button-content' slot -->
@@ -52,8 +54,9 @@ export default {
   name: 'NavBar',
   data(){
     return{
-      language: 'ES',
-      isHidden: false
+      language: 'es',
+      isHidden: false,
+      langs: ['es', 'en'] 
     }
   }
 }
