@@ -1,22 +1,32 @@
 <template>
     <b-container class="most-useful-git-commands">
-        <b-row class="text-center">
+        <b-row>
             <b-col sm>
                 <h2>10 Git Commands That Every Hiring Manager Should Ask</h2>
                 <p><em>It may be seem trivial, but every developer should know this commands or at least have an idea</em></p>
             </b-col>
         </b-row>
         <b-row>
-            <b-col sm="6" class="left-separator">
+            <b-col sm="6">
                 <img src="../../assets/branching-illustration.png" alt="Image of Git Branching" class="img-fluid">
             </b-col>
             <b-col sm="6" class="left-separator">
                 <p align="justify">Let's start with the commands, then some examples and finally with some use cases.</p>
+            </b-col>
+        </b-row>
+        <b-row class="most-useful-git-commands">
+
+            <b-col sm="4" >
+                <h3><br></h3>
+                <p><em>According to the latest <b-link target="_blank" href="https://insights.stackoverflow.com/survey/2017#work-_-version-control">Stack Overflow developer survey</b-link>, more than 70 percent of developers use Git, making it the most-used version control system in the world.</em></p>
+            </b-col>
+            <b-col sm="8" class="left-separator">
                 <h3> git reset --hard </h3>
                 <p align="justify"> If you're not working directly on your local git repository, then this command is pretty useful and <b>very safe</b>. The syntax is as follows:<br><br>
                 <code>git reset --hard [commit]</code>
-                <br><br>Where <code>commit</code> is the target. So any changes to tracked files in the working tree since <code>commit</code> are discarded. Let's take a look at some examples:
-            </p> 
+                <br><br>Where <code>commit</code> is the target. So any changes to tracked files in the working tree since <code>commit</code> are discarded. Let's take a look at some examples:<br><br>
+                <code>git reset --hard origin/master</code>
+                </p> 
             </b-col>
         </b-row>
     </b-container>
@@ -31,6 +41,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @media screen {
+    .left-separator{
+        border-left: 1px solid #E1E0E1;
+    }
     .most-useful-git-commands{
         padding: 30px;
     }
