@@ -1,5 +1,7 @@
 export const ENGLISH = {
-    text: {
+    nav: {
         about_me: 'About Me',
+        search: 'Search',
+        language: 'Language'
     }
 };

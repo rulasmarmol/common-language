@@ -1,5 +1,7 @@
 export const SPANISH = {
-    text: {
+    nav: {
         about_me: 'Acerca del autor',
+        search: 'Buscar',
+        language: 'Idioma'
     }
 };

@@ -14,8 +14,8 @@
                 <p align="justify">Let's start with the commands, then some examples and finally with some use cases.</p>
                 <h3> git reset --hard </h3>
                 <p align="justify"> If you're not working directly on your local git repository, then this command is pretty useful and <b>very safe</b>. The syntax is as follows:<br><br>
-                <code>git reset --hard [some commit]</code>
-                <br><br>Where <code>commit</code> 
+                <code>git reset --hard [commit]</code>
+                <br><br>Where <code>commit</code> is the target. So any changes to tracked files in the working tree since <code>commit</code> are discarded. Let's take a look at some examples:
             </p> 
             </b-col>
         </b-row>

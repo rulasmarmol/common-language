@@ -16,30 +16,21 @@
             <b-dropdown-item href="#">Fitness</b-dropdown-item>
             <b-dropdown-item href="#">Travel</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="#">{{ $t('text.about_me') }}</b-nav-item>
+          <b-nav-item href="#">{{ $t('nav.about_me') }}</b-nav-item>
         </b-navbar-nav>
         <!-- Right aligned nav items -->
         <transition name="fade">
           <b-navbar-nav class="ml-auto" v-show=isHidden>
             <b-nav-form id="searchForm" >
-              <b-form-input size="sm" class="mr-sm-2" type="search" placeholder="Search"></b-form-input>
+              <b-form-input size="sm" class="mr-sm-2" type="search" :placeholder="$t('nav.search')"></b-form-input>
               <b-button size="sm" class="my-2 my-sm-0" type="button"><b-icon-search></b-icon-search></b-button>
             </b-nav-form>
 
             <b-nav-item-dropdown :text="$i18n.locale" right >
-              <b-dropdown-item href="#" @click="$i18n.locale = 'en'">en</b-dropdown-item>
-              <b-dropdown-item href="#" @click="$i18n.locale = 'es'">es</b-dropdown-item>
-            </b-nav-item-dropdown>
-
-                
-
-            <b-nav-item-dropdown right >
-              <!-- Using 'button-content' slot -->
-              <template v-slot:button-content>
-                <em>User</em>
-              </template>
-              <b-dropdown-item href="#">Profile</b-dropdown-item>
-              <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+              <b-dropdown-group id="dropdown-group-1" :header="$t('nav.language')">
+                <b-dropdown-item href="#" @click="$i18n.locale = 'en'">English</b-dropdown-item>
+                <b-dropdown-item href="#" @click="$i18n.locale = 'es'">Español</b-dropdown-item>
+              </b-dropdown-group>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </transition>
@@ -54,9 +45,7 @@ export default {
   name: 'NavBar',
   data(){
     return{
-      language: 'es',
-      isHidden: false,
-      langs: ['es', 'en'] 
+      isHidden: false
     }
   }
 }
