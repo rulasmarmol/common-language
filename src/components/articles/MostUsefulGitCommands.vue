@@ -30,7 +30,25 @@
                 So when to use it, as we mention before if you're not working directly in your local repository, it's probably that you need to copy your changes before commit and you forgot to do <code>git pull</code>, so now you have a conflict, but you have your changes somewhere else, so it's easier to reset the current branch and apply your changes to the latest files. <br><br>Here's another example:<br><br>
                 <code>git reset --hard a11bef06a3f659402fe7563abf99ad00de2209e6</code><br><br>
                 This time we are talking about a specific <code>commit</code> where <code>a11bef06a3f659402fe7563abf99ad00de2209e6</code> is its SHA-1 checksum.<br><br>
-                It would be nice not to make mistakes, but shit happens and it's often useful to reset your local branch with the remote one, when someone (not you obviously) committed changes to the wrong branch or the changes are unstable. This command is very useful, of course, for this case first you need to backup your commits (wheter with a new branch or just by copying).                  
+                It would be nice not to make mistakes, but shit happens and it's often useful to reset your local branch with the remote one, when someone (not you obviously) committed changes to the wrong branch or the changes are unstable. This command is very useful, of course, in this case, first you need to backup your commits (wheter with a new branch or just by copying).                  
+                </p> 
+            </b-col>
+        </b-row>
+        <b-row class="most-useful-git-commands">
+            <b-col sm="4" >
+
+            </b-col>
+            <b-col sm="8" class="left-separator">
+                <h3> git stash </h3>
+                <p align="justify"> If you're not working directly on your local git repository, then this command is pretty useful and <b>very safe</b>. The syntax is as follows:<br><br>
+                <code>git reset --hard [commit]</code><br><br>
+                Where <code>commit</code> is the target state. So any changes to tracked files in the working tree since <code>commit</code> are discarded. Let's take a look at some examples:<br><br>
+                <code>git reset --hard origin/master</code><br><br>
+                This means: discard every thing on my current local branch and make it exactly as <code>origin/master</code>. <br><br>
+                So when to use it, as we mention before if you're not working directly in your local repository, it's probably that you need to copy your changes before commit and you forgot to do <code>git pull</code>, so now you have a conflict, but you have your changes somewhere else, so it's easier to reset the current branch and apply your changes to the latest files. <br><br>Here's another example:<br><br>
+                <code>git reset --hard a11bef06a3f659402fe7563abf99ad00de2209e6</code><br><br>
+                This time we are talking about a specific <code>commit</code> where <code>a11bef06a3f659402fe7563abf99ad00de2209e6</code> is its SHA-1 checksum.<br><br>
+                It would be nice not to make mistakes, but shit happens and it's often useful to reset your local branch with the remote one, when someone (not you obviously) committed changes to the wrong branch or the changes are unstable. This command is very useful, of course, in this case, first you need to backup your commits (wheter with a new branch or just by copying).                  
                 </p> 
             </b-col>
         </b-row>
