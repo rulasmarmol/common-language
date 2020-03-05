@@ -42,8 +42,27 @@
                 <h3> git stash </h3>
                 <p align="justify">In a few words <code>git stash</code> is the clipboard of your version control system. The basic usage is this:<br><br>
                 <code>git stash</code><br><br>
-                This command cut your uncommited changes (staged and unstaged), paste it away for later use and reverts the working directory to match the <code>HEAD commit</code>.
-                </p> 
+                This command cut your uncommited changes (staged and unstaged), paste it away for later use and reverts the working directory to match the <code>HEAD commit</code>. Well, in a manner of speaking. <br><br>
+                Here's another example:<br><br>
+                <code>git stash apply</code><br><br>
+                This one paste your latest stash to the current branch. That would be one way to put it.<br><br>
+                You can use both commands when you have to apply a quick patch or fix, to the current branch, and your current changes are not ready to be committed.<br><br>
+                It is also useful when you want a clean <code>commit</code>, just before doing the <code>commit</code> you can <code>stash</code> your changes, then apply a <code>git pull</code>, to avoid conflicts, finally <code>git stash apply</code> to restore your changes, so you can commit without conflicts (unless you and another person both edited the same file).<br><br></p> 
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col sm="4" >
+            </b-col>
+            <b-col sm="8" class="left-separator">
+                <h3> git add</h3>
+                <p align="justify">In a few words <code>git stash</code> is the clipboard of your version control system. The basic usage is this:<br><br>
+                <code>git stash</code><br><br>
+                This command cut your uncommited changes (staged and unstaged), paste it away for later use and reverts the working directory to match the <code>HEAD commit</code>. Well, in a manner of speaking. <br><br>
+                Here's another example:<br><br>
+                <code>git stash apply</code><br><br>
+                This one paste your latest stash to the current branch. That would be one way to put it.<br><br>
+                You can use both commands when you have to apply a quick patch or fix, to the current branch, and your current changes are not ready to be committed.<br><br>
+                It is also useful when you want a clean <code>commit</code>, just before doing the <code>commit</code> you can <code>stash</code> your changes, then apply a <code>git pull</code>, to avoid conflicts, finally <code>git stash apply</code> to restore your changes, so you can commit without conflicts (unless you and another person both edited the same file).</p> 
             </b-col>
         </b-row>
     </b-container>
