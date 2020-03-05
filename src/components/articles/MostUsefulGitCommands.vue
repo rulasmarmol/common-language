@@ -55,14 +55,16 @@
             </b-col>
             <b-col sm="8" class="left-separator">
                 <h3> git add</h3>
-                <p align="justify">In a few words <code>git stash</code> is the clipboard of your version control system. The basic usage is this:<br><br>
-                <code>git stash</code><br><br>
-                This command cut your uncommited changes (staged and unstaged), paste it away for later use and reverts the working directory to match the <code>HEAD commit</code>. Well, in a manner of speaking. <br><br>
-                Here's another example:<br><br>
-                <code>git stash apply</code><br><br>
-                This one paste your latest stash to the current branch. That would be one way to put it.<br><br>
-                You can use both commands when you have to apply a quick patch or fix, to the current branch, and your current changes are not ready to be committed.<br><br>
-                It is also useful when you want a clean <code>commit</code>, just before doing the <code>commit</code> you can <code>stash</code> your changes, then apply a <code>git pull</code>, to avoid conflicts, finally <code>git stash apply</code> to restore your changes, so you can commit without conflicts (unless you and another person both edited the same file).</p> 
+                <p align="justify">This one is very simple, the definition says: the <code>git add</code> command marks changes to be included in the next commit.<br><br>
+                If this is the first time you're using git, this should be the suggested usage:<br><br>
+                <code>git add [file...]</code><br><br>
+                We can add multiple files by placing the names separated by space, if the file is not in the same folder, then you need to specified the path. E.g.<br><br>
+                <code>git add index.html js/index.js css/index.css</code><br><br>
+                We are including three files to the next commit: <code>index.html</code> which is in the same folder where we are executing the command and two other that are in a different folder.<br><br>
+                If you already configured the gitignore file, then this command is very useful.<br><br>
+                <code>git add .</code>
+                This will add all your modified and new files in the current and subsequent folders. Any files that match with the specified patterns in the gitignore file will be omitted. 
+                </p>
             </b-col>
         </b-row>
     </b-container>
