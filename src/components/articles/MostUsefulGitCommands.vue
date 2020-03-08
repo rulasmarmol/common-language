@@ -63,7 +63,40 @@
                 We are including three files to the next commit: <code>index.html</code> which is in the same folder where we are executing the command and two other that are in a different folder.<br><br>
                 If you already configured the gitignore file, then this command is very useful.<br><br>
                 <code>git add .</code>
-                This will add all your modified and new files in the current and subsequent folders. Any files that match with the specified patterns in the gitignore file will be omitted. 
+                This will add all your modified and new files in the current and subsequent folders. Any files that match with the specified patterns in the gitignore file will be omitted.<br><br>
+                </p>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col sm="4" >
+            </b-col>
+            <b-col sm="8" class="left-separator">
+                <h3> git status</h3>
+                <p align="justify">Before adding something to commit, you need to know what to add. To get an overview of what you've done since your last commit, you can use <code>git status</code>:<br><br>
+                <code>$ git status<br>
+                    On branch master<br>
+                    Changes not staged for commit:<br>
+                    (use "git add/rm &lt;file&gt;... " to update what will be committed)<br>
+                    (use "git checkout -- &lt;file&gt;..." to discard changes in working<br>
+                    directory)<br>
+                    <br>
+                        modified:   css/about.css<br>
+                        modified:   css/general.css<br>
+                        deleted:    error.html<br>
+                        modified:   imprint.html<br>
+                    <br>
+                    Untracked files:<br>
+                        (use "git add &lt;file&gt;..." to include in what will be committed)<br>
+                        <br>
+                        new-page.html<br>
+                        <br>
+                    Changes to be commit: <br>
+                        (use "git reset HEAD &lt;file&gt;..." to unstage)<br>
+                        <br>
+                        modified: index.html<br>
+                        modified: js/index.js<br>
+                        modified: css/index.css<br></code><br><br>
+                <br><br>
                 </p>
             </b-col>
         </b-row>
