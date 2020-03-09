@@ -115,6 +115,19 @@
                 </p>
             </b-col>
         </b-row>
+        <b-row>
+            <b-col sm="4" >
+            </b-col>
+            <b-col sm="8" class="left-separator">
+                <h3> git push</h3>
+                <p align="justify">As we mentioned before, this command will publish your changes to the remote server. <br><br>
+                The usage is very simple:<br><br>
+                <code>git push</code>
+                All the stored changes in your local repository will be published to the remote server. 
+                <br><br>
+                </p>
+            </b-col>
+        </b-row>
     </b-container>
 </template>
 
