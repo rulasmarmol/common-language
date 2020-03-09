@@ -110,7 +110,7 @@
                 The most common usage is this:<br><br>
                 <code>git commit -m "Add navbar to homepage"</code><br><br>
                 Besides adding your changes to the local repository, this command will add a description of your changes (Make sure to provide a concise description that helps your teammates and yourself understand what was changed).<br><br>
-                It is worth mentioning that the changes are stored in the <b>local repository</b>, if you want to move your changes to the remote server you need to use <code>git push</code>. 
+                It is worth mentioning that the changes are stored in the <b>local repository</b>, if you want to move your changes to the remote server, then you need to use <code>git push</code>. 
                 <br><br>
                 </p>
             </b-col>
