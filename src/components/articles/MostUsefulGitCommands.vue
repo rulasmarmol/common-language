@@ -61,9 +61,10 @@
                 We can add multiple files by placing the names separated by space, if the file is not in the same folder, then you need to specified the path. E.g.<br><br>
                 <code>git add index.html js/index.js css/index.css</code><br><br>
                 We are including three files to the next commit: <code>index.html</code> which is in the same folder where we are executing the command and two other that are in a different folder.<br><br>
-                If you already configured the gitignore file, then this command is very useful.<br><br>
-                <code>git add .</code>
+                Here's another one:<br><br>
+                <code>git add .</code><br><br>
                 This will add all your modified and new files in the current and subsequent folders. Any files that match with the specified patterns in the gitignore file will be omitted.<br><br>
+                If you already configured the gitignore file, then this command is very useful.<br><br>
                 </p>
             </b-col>
         </b-row>
@@ -80,22 +81,33 @@
                     (use "git checkout -- &lt;file&gt;..." to discard changes in working<br>
                     directory)<br>
                     <br>
-                        modified:   css/about.css<br>
+                        <div class="ml-4">modified:   css/about.css<br>
                         modified:   css/general.css<br>
                         deleted:    error.html<br>
-                        modified:   imprint.html<br>
-                    <br>
+                        modified:   imprint.html</div><br>
                     Untracked files:<br>
                         (use "git add &lt;file&gt;..." to include in what will be committed)<br>
                         <br>
-                        new-page.html<br>
-                        <br>
+                        <div class="ml-4">new-page.html</div><br>
                     Changes to be commit: <br>
                         (use "git reset HEAD &lt;file&gt;..." to unstage)<br>
                         <br>
-                        modified: index.html<br>
+                        <div class="ml-4">modified: index.html<br>
                         modified: js/index.js<br>
-                        modified: css/index.css<br></code><br><br>
+                        modified: css/index.css</div></code><br>
+                    As we can see, there are four sections: first, the name of the branch where we are working. Second, the list of the changes ready to be added to the commit. Next, untracked files (these are either files that are newly created or files that are ignored). Finally, changes included in the next commit.<br><br>
+                    This way we can easily build our next commit.
+                <br><br>
+                </p>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col sm="4" >
+            </b-col>
+            <b-col sm="8" class="left-separator">
+                <h3> git commit</h3>
+                <p align="justify">This command will save your changes (those changes that were previously added using <code>git add</code>) to the <b>local repository</b>.<br><br>
+
                 <br><br>
                 </p>
             </b-col>
