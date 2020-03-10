@@ -122,8 +122,23 @@
                 <h3> git push</h3>
                 <p align="justify">As we mentioned before, this command will publish your changes to the remote server. <br><br>
                 The usage is very simple:<br><br>
-                <code>git push</code>
-                All the stored changes in your local repository will be published to the remote server. 
+                <code>git push</code><br><br>
+                If you're publishing a local branch for the first time, then you need link your local branch and the newly created remote branch. In order to do that, then you need to add the <code>-u</code> option. E.g.<br><br>
+                <code>git push -u origin new-feature</code><br><br>
+                This way we can perform future <code>git push</code> without additional options. 
+                <br><br>
+                </p>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col sm="4" >
+            </b-col>
+            <b-col sm="8" class="left-separator">
+                <h3> git pull</h3>
+                <p align="justify">This command is a little bit different from the previous, because performs two operations: download remote content (<code>git fetch</code>) and update the local repository (<code>git merge</code> by default). The default usage is this:<br><br>
+                <code>git pull</code><br><br>
+                If you have a proper link with the remote branch then you can use it this way without problem, otherwise you need to specify the remote and branch (like the <code>git push</code> command). By default, this command updates your local branch with the <code>merge</code> option, if you want to use <code>rebase</code> instead of <code>merge</code>, then you have to add the <code>--rebase</code> option.<br><br>
+                <code>git pull --rebase</code>
                 <br><br>
                 </p>
             </b-col>
