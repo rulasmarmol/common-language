@@ -3,7 +3,7 @@
         <b-row>
             <b-col sm>
                 <h2>10 Git Commands That Every Hiring Manager Should Ask</h2>
-                <p><em>It may be seem trivial, but every developer should know this commands or at least have an idea</em></p>
+                <p><em>It may be seem trivial, but every developer should know this commands</em></p>
             </b-col>
         </b-row>
         <b-row>
@@ -11,7 +11,7 @@
                 <img src="../../assets/branching-illustration.png" alt="Image of Git Branching" class="img-fluid">
             </b-col>
             <b-col sm="6" class="left-separator">
-                <p align="justify">Let's start with the commands, then some examples and finally with some use cases.</p>
+                <p align="justify" class="intro">According to the latest <b-link target="_blank" href="https://insights.stackoverflow.com/survey/2017#work-_-version-control">Stack Overflow developer survey</b-link>, more than 70 percent of developers use Git, making it the most-used version control system in the world. So it doesn't matter the programming language, at the end your're going to have to deal with Git. I've been working in a project where we started with SVN, but after a year we decide to move to Git, after two years we still have many problems using it, but in the profile we never mention Git as a requirement, after all the problems we've been having it is clear for us that this skill must be evaluated. </p>
             </b-col>
         </b-row>
         <b-row class="most-useful-git-commands">
@@ -199,6 +199,9 @@ export default {
     }
     .most-useful-git-commands{
         padding-top: 30px;
+    }
+    .intro{
+        font-size: x-large;
     }
 }
 </style>
