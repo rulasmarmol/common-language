@@ -132,7 +132,7 @@
                 <code>git pull</code><br><br>
                 If you have a proper link with the remote branch then you can use it this way without problem, otherwise you need to specify the remote and branch (like the <code>git push</code> command). By default, this command updates your local branch with the <code>merge</code> option, if you want to use <code>rebase</code> instead of <code>merge</code>, then you have to add the <code>--rebase</code> option.<br><br>
                 <code>git pull --rebase</code><br><br>
-                To avoid conflicts during the merge, try to stash your changes before doing the <code>git pull</code>.<br><br>
+                To avoid conflicts during the merge, try to stash your changes before doing the <code>git pull</code>.
                 <br><br>
                 </p>
             </b-col>
@@ -150,7 +150,21 @@
                 <br>=======<br>
                 [changes in the new-feature branch]<br>
                 &gt;&gt;&gt;&gt;&gt;&gt;&gt; new-feature</code><br><br>
-                The solution of the conflict will depend of the changes, whether you may leave the changes of one of the branches or maybe you need to mix the changes manually, but at the end you need to delete all the symbols: <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; new-feature</code>.<br><br>
+                The solution of the conflict will depend of the changes, whether you may leave the changes of one of the branches or maybe you need to mix them manually, but at the end you need to delete all the symbols: <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; new-feature</code>.
+                <br><br>
+                </p>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col sm="4" >
+            </b-col>
+            <b-col sm="8" class="left-separator">
+                <h3> git checkout</h3>
+                <p align="justify">Whether you want to switch the currently active branch or to restore some files, you can use this command, if you want to switch the currently active branch you need to specify the branch like this:<br><br>
+                    <code>git checkout new-feature</code><br><br>
+                Where <code>new-feature</code> is the branch you want to switch to. But if you want to restore some files, then you have to specify the file or the list of files like the <code>git add</code> command, e.g<br><br>
+                <code>git checkout index.html js/index.js css/index.css</code><br><br>
+                This is useful when you mess up your local repository after some change. If you know what is the file that is causing problems then this is your command.
                 <br><br>
                 </p>
             </b-col>
