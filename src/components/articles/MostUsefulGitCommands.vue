@@ -168,7 +168,20 @@
                 <br><br>
                 </p>
             </b-col>
-        </b-row>        
+        </b-row>
+        <b-row>
+            <b-col sm="4" >
+            </b-col>
+            <b-col sm="8" class="left-separator">
+                <h3> git clone</h3>
+                <p align="justify">Finally, the most vital command, without this one you cannot perform any of the previous commands, because this command will download an existing git repository to your local computer. There are two basic ways to clone a repository:<br><br>
+                <code>git clone https://github.com/rulasmarmol/common-language.git</code><br><br>
+                <code>git clone git@github.com:rulasmarmol/common-language.git</code><br><br>
+                The first one is through https and the second one via SSH. According to the configuration of your repository you can use any of these.
+                <br><br>
+                </p>
+            </b-col>
+        </b-row>           
     </b-container>
 </template>
 
